@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Restaurant</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="turn.min.js"></script>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP-CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid m-0 p-0">
+        <h5 class="text-white text-center">
+            <i class="fa-solid fa-arrow-left-long mt-4"></i>
+            <span class="ml-3 mr-3 mt-4">Slider</span>
+            <i class="fa-solid fa-arrow-right-long mt-3"></i>
+        </h5>
+        <div class="container mt-4 pt-4">
+            <div id="flipbook" class="m-auto mb-5">
+                <!-- First Page -->
+                <div class="front-bg position-relative">
+                    <div class="position-absolute bg">
+                        <p class="heading m-0 p-0 fade-in-text">Restaurant Menu</p>
+                        <p class="p-0 m-0 text-center slide-in-left">
+                            <a href="https://www.codepro.com.pk/" class="text-decoration-none text-white text-center fs-2">www.codepro.com.pk</a><br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                            omnis vero minima nemo sit. Ipsum?
+                        </p>
+                    </div>
+                </div>
+                <!-- Second Page -->
+                <div class="back-bg">
+                    <div class="container m-4">
+                        <h5 class="text-white bounce">Warner & Spencer</h5>
+                        <h1 class="main-heading mt-4 rotate-in">JAPANESE <br>MENU</h1>
+                        <div class="container text-white mt-3">
+                            <h6 class="zoom-in">SPECIALTY ROLLS</h6>
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">Volcano Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">Caterpillar Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">Godzilla Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">Dynamite Roll</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">S11</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">S12</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">S11</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">S13</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container text-white mt-3">
+                            <h6 class="fade-in-text">VEGETARIAN SUSHI</h6>
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">Avocado Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">Cucumber Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">Asparagus Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">Sweet Potato Roll</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">S11</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">S12</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">S11</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">S13</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-3 slide-in-left">
+                            <a href="https://www.codepro.com.pk/" class="text-decoration-none text-white">www.codepro.com.pk</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third Page -->
+                <div class="back-bg">
+                    <div class="container m-4">
+                        <h5 class="text-white bounce">Warner & Spencer</h5>
+                        <h1 class="main-heading mt-4 rotate-in">JAPANESE <br>MENU</h1>
+                        <div class="container text-white mt-3">
+                            <h6 class="zoom-in">SPECIALTY ROLLS</h6>
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">Volcano Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">Caterpillar Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">Godzilla Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">Dynamite Roll</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">S11</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">S12</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">S11</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">S13</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container text-white mt-3">
+                            <h6 class="fade-in-text">VEGETARIAN SUSHI</h6>
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">Avocado Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">Cucumber Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">Asparagus Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">Sweet Potato Roll</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">S11</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">S12</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">S11</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">S13</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-3 slide-in-left">
+                            <a href="https://www.codepro.com.pk/" class="text-decoration-none text-white">www.codepro.com.pk</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fourth Page -->
+                <div class="back-bg">
+                    <div class="container m-4">
+                        <h5 class="text-white bounce">Warner & Spencer</h5>
+                        <h1 class="main-heading mt-4 rotate-in">JAPANESE <br>MENU</h1>
+                        <div class="container text-white mt-3">
+                            <h6 class="zoom-in">SPECIALTY ROLLS</h6>
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">Volcano Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">Caterpillar Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">Godzilla Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">Dynamite Roll</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">S11</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">S12</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">S11</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">S13</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container text-white mt-3">
+                            <h6 class="fade-in-text">VEGETARIAN SUSHI</h6>
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">Avocado Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">Cucumber Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">Asparagus Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">Sweet Potato Roll</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">S11</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">S12</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">S11</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">S13</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-3 slide-in-left">
+                            <a href="https://www.codepro.com.pk/" class="text-decoration-none text-white">www.codepro.com.pk</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fifth Page -->
+                <div class="back-bg">
+                    <div class="container m-4">
+                        <h5 class="text-white bounce">Warner & Spencer</h5>
+                        <h1 class="main-heading mt-4 rotate-in">JAPANESE <br>MENU</h1>
+                        <div class="container text-white mt-3">
+                            <h6 class="zoom-in">SPECIALTY ROLLS</h6>
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">Volcano Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">Caterpillar Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">Godzilla Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">Dynamite Roll</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">S11</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">S12</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">S11</p>
+                                    </div>
+                                    <div class="p-0 m-0 bounce">
+                                        <p class="p-0 m-0">S13</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container text-white mt-3">
+                            <h6 class="fade-in-text">VEGETARIAN SUSHI</h6>
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">Avocado Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">Cucumber Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">Asparagus Roll</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">Sweet Potato Roll</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">S11</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">S12</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">S11</p>
+                                    </div>
+                                    <div class="p-0 m-0 rotate-in">
+                                        <p class="p-0 m-0">S13</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-3 slide-in-left">
+                            <a href="https://www.codepro.com.pk/" class="text-decoration-none text-white">www.codepro.com.pk</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript For FlipBook -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        const flipbookOptions = {
+            width: 800,
+            height: 500,
+            page: 1,
+            autoCenter: true,
+            duration: 2000
+        };
+
+        if ($(window).width() < 450) {
+            flipbookOptions.width = 350;  // Adjusted width
+            flipbookOptions.height = 500; // Adjusted height
+            flipbookOptions.display = 'single'; // Single page display
+        }
+
+        $("#flipbook").turn(flipbookOptions);
+
+        $("#flipbook").on("turn", function(event, page, view) {
+            // Remove all animation classes
+            $(".text-container .fade-in-text, .text-container .slide-in-left, .text-container .bounce, .text-container .rotate-in, .text-container .zoom-in")
+                .removeClass("fade-in-text slide-in-left bounce rotate-in zoom-in");
+
+            // Apply the appropriate animation class based on the current page
+            const animations = {
+                1: 'fade-in-text',
+                2: 'slide-in-left',
+                3: 'bounce',
+                4: 'rotate-in',
+                5: 'zoom-in'
+            };
+
+            const currentPage = $(this).turn('page');
+            const animationClass = animations[currentPage] || 'fade-in-text';
+
+            // Get all text containers on the current page
+            const textContainers = $(`#flipbook .page[data-page=${currentPage}] .text-container`);
+
+            // Apply animation with delay for each text container
+            textContainers.each(function(index) {
+                const element = $(this);
+                setTimeout(function() {
+                    element.addClass(animationClass);
+                }, index * 1500); // 500ms delay between each animation
+            });
+        });
+
+    });
+    </script>
+    <!-- BOOTSTRAP-JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>

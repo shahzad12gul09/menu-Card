@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-image: url(img/background.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#flipbook{
+  width:800px;
+  height:600px;
+}
+#flipbook .page{
+  width:400px;
+  height:600px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(233, 233, 248, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(255, 242, 242, 0.35) 0px -2px 6px 0px inset;
+}
+.front-bg{
+  background-image: url(img/fronpage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.bg{
+  background-color: #00000000;
+  bottom: 10px;
+  padding: 0 35px;
+}
+.heading{
+  font-family: "Permanent Marker", cursive;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2.3rem;
+}
+.back-bg{
+  background-image: url(img/back-img.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main-heading{
+  color: #FDAE39;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 2.3rem;
+
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in-text {
+  animation: fadeIn 1s forwards;
+}
+
+/* Slide-in from the left animation */
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s forwards;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-30px);
+  }
+  60% {
+      transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  animation: bounce 1s forwards;
+}
+
+/* Rotate animation */
+@keyframes rotateIn {
+  from { transform: rotate(-30deg); opacity: 0; }
+  to { transform: rotate(0); opacity: 1; }
+}
+
+.rotate-in {
+  animation: rotateIn 1s forwards;
+}
+
+/* Zoom animation */
+@keyframes zoomIn {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+.zoom-in { 
+  animation: zoomIn 1s forwards; 
+}
